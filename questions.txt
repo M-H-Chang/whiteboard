@@ -52,7 +52,7 @@ function remDuplicate = (array) => {
   let newArray = [];
   for(let i = 0; i < array.length; i++) {
     let compare = array[i]
-    if(compare !== i){
+    if(compare !== array[i]){
       newArray.push(compare)
     } 
   }
@@ -122,4 +122,24 @@ Example
 Input: [9, 2, 7, 12]
 
 Output: [2, 7, 9, 12]
+
+insertion sort:
+function lowestToGreatest(array){
+    let length = array.length;
+    for (let i = 1; i < array.length; i++) {
+        let key = array[i];
+        let j = i - 1;
+        while (j >= 0 && array[j] > key) {
+            array[j + 1] = array[j];
+            j = j - 1;
+        }
+        array[j + 1] = key;
+    }
+    return array;
+};
+
+
+
+
+
 
