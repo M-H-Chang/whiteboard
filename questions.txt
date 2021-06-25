@@ -97,11 +97,15 @@ Input: "copyright"
 
 Output: true
 
-
-
-
-
-
+function unique(string) {
+  for(let i = 1; i < string.length; i++){
+    if(i !== string.substring[i]){
+      return true
+    } else {
+      return false;
+    }
+  }
+}
 
 Question #5: Array Sorting
 Write an algorithm that sorts an array without using the sort() method. There are many different sorting algorithms - take the time to read about the following:
@@ -118,3 +122,4 @@ Example
 Input: [9, 2, 7, 12]
 
 Output: [2, 7, 9, 12]
+
